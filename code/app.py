@@ -8,7 +8,7 @@ import pandas as pd  # if you need
 # Load patient outcome data
 def load_patient_data():
     # Updated URL to a reliable source
-    url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+    data_url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
     column_names = ["Pregnancies", "Glucose", "BloodPressure", "SkinThickness", "Insulin", "BMI", "DiabetesPedigreeFunction", "Age", "Outcome"]
     data = pd.read_csv(url, names=column_names)
     return data
