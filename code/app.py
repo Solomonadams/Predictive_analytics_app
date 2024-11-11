@@ -1,10 +1,13 @@
 import streamlit as st
 import pandas as pd
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
+#import tensorflow as tf
+#from tensorflow.keras.models import Sequential
+#from tensorflow.keras.layers import Dense
+from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, mean_squared_error
+from sklearn.preprocessing import StandardScaler
+
 
 # Load patient outcome data
 def load_patient_data():
