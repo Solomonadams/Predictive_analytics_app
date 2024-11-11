@@ -18,8 +18,8 @@ def load_patient_data():
 # Define the function to train the model
 def train_outcome_model(data):
     # Assume 'target' is the column to predict; replace with the actual target column name
-    X = data.drop('column', axis=1)  # Replace 'target' with the correct label column name
-    y = data['column']
+    X = data.drop('column_names', axis=1)  # Replace 'target' with the correct label column name
+    y = data['column_names']
 
     # Split the data into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
