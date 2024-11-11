@@ -48,11 +48,6 @@ st.write(f"Patient Outcome Model Accuracy: {accuracy * 100:.2f}%")
 st.title("Healthcare Predictive Analytics App")
 st.write("Predictive model for patient outcomes based on health metrics.")
 
-# Load data and train model
-data = load_patient_data()
-model, accuracy = train_outcome_model(data)
-
-st.write(f"Patient Outcome Model Accuracy: {accuracy * 100:.2f}%")
 
 # Interactive prediction form
 st.sidebar.header("Enter Patient Details")
