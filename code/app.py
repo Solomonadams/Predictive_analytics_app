@@ -10,7 +10,7 @@ def load_patient_data():
     # Updated URL to a reliable source
     data_url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
     column_names = ["Pregnancies", "Glucose", "BloodPressure", "SkinThickness", "Insulin", "BMI", "DiabetesPedigreeFunction", "Age", "Outcome"]
-    data = pd.read_csv(url, names=column_names)
+    data = pd.read_csv(data_url, names=column_names)
     return data
 
 
